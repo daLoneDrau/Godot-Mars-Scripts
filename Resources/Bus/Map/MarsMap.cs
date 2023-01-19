@@ -2,12 +2,12 @@ using Base.Resources.Services;
 using Godot;
 using System;
 using System.Collections.Generic;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
 
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Map
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Map
 {
     public class MarsMap : Node
     {
@@ -59,7 +59,7 @@ namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Map
             base._Ready();
             if (GameVariablesDatabase.Instance.BoolVariable["mars_debugging_on"].RuntimeValue)
             {
-                GD.Print("Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Map.MarsMap._Ready()");
+                GD.Print("BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Map.MarsMap._Ready()");
             }
             if (Instance == null)
             {

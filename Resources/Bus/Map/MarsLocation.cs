@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Map
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Map
 {
     public class MarsLocation
     {

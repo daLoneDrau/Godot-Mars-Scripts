@@ -1,13 +1,13 @@
 using Base.Resources.Services;
 using Godot;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Map;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Map;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
 
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Init
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Init
 {
   public class MarsInitController : Node
     {
@@ -24,7 +24,7 @@ namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Init
             base._Ready();
             if (GameVariablesDatabase.Instance.BoolVariable["mars_debugging_on"].RuntimeValue)
             {
-                GD.Print("Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Intro.MarsInitController._Ready()");
+                GD.Print("BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Intro.MarsInitController._Ready()");
             }
             Instance = this;
             // initialize the scene

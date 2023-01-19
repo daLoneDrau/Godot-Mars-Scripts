@@ -3,10 +3,10 @@ using Base.Resources.Services;
 using Bus.Services;
 using Godot;
 using System;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
 
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
 {
     public class MarsIoFactory : IoFactory
     {

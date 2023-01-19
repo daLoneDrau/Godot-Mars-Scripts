@@ -1,12 +1,12 @@
 using Base.Resources.Data;
 using Base.Resources.Services;
 using Godot;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
 
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
 {
   public class MarsController : Node
     {
@@ -40,7 +40,7 @@ namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
         {
             if (GameVariablesDatabase.Instance.BoolVariable["mars_debugging_on"].RuntimeValue)
             {
-                GD.Print("Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services.MarsController.Begin()");
+                GD.Print("BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services.MarsController.Begin()");
             }
             GameState = MarsResourceDatabase.Instance.MarsGameStates[MarsGameStateEnum.MARS_GAME_START.ToString()];
             MainCycle();
@@ -52,14 +52,14 @@ namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
         {
             if (GameVariablesDatabase.Instance.BoolVariable["mars_debugging_on"].RuntimeValue)
             {
-                GD.Print("Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services.MarsController.Reset()");
+                GD.Print("BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services.MarsController.Reset()");
             }
         }
         public void MainCycle()
         {
             if (GameVariablesDatabase.Instance.BoolVariable["mars_debugging_on"].RuntimeValue)
             {
-                GD.Print("Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services.MarsController.MainCycle()");
+                GD.Print("BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services.MarsController.MainCycle()");
             }
             string nextSceneToDisplay = null;
             switch (GameState.MarsGameStateEnum)

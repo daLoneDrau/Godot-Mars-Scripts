@@ -1,7 +1,7 @@
 using Godot;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
 
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources
 {
 	public class MarsItemTypeResource : Resource
 	{

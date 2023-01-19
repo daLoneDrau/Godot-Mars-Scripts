@@ -1,4 +1,4 @@
-namespace Test_App.BasicGames.Mars.Resources.EnumeratedTypes
+namespace BasicGames.Mars.Resources.EnumeratedTypes
 {
 	public enum MarsEnum
 	{

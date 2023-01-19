@@ -2,7 +2,7 @@ using Base.Resources.Bus;
 using Godot;
 using System;
 
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus
 {
     public class MarsInteractiveObject : InteractiveObject
     {

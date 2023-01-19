@@ -2,13 +2,13 @@ using Base.Pooled;
 using Base.Resources.Events;
 using Base.Resources.Services;
 using Godot;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
 
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.NewGame
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.NewGame
 {
     public class MarsNewGameController : Node
     {
@@ -30,7 +30,7 @@ namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.NewGame
             base._Ready();
             if (GameVariablesDatabase.Instance.BoolVariable["mars_debugging_on"].RuntimeValue)
             {
-                GD.Print("Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.NewGame.MarsNewGameController._Ready()");
+                GD.Print("BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.NewGame.MarsNewGameController._Ready()");
             }
             PublicBroadcastService.Instance.PcEventChannel.AddSubscriber(HandlePlayerEvents);
             Instance = this;
@@ -57,7 +57,7 @@ namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.NewGame
         {
             if (GameVariablesDatabase.Instance.BoolVariable["mars_debugging_on"].RuntimeValue)
             {
-                GD.Print("Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.NewGame.MarsNewGameController.HandlePlayerEvents(", signal.EventId);
+                GD.Print("BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.NewGame.MarsNewGameController.HandlePlayerEvents(", signal.EventId);
             }
 
             PooledStringBuilder sb = StringBuilderPool.Instance.GetStringBuilder();

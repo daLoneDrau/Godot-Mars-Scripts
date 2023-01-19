@@ -1,4 +1,4 @@
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes
 {
 	public enum MarsNewGameStateEnum
 	{

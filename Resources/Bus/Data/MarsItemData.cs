@@ -8,11 +8,11 @@ using Bus.Services;
 using Godot;
 using System;
 using System.Collections.Generic;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
 
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data
 {
     public class MarsItemData : IoItemData
     {

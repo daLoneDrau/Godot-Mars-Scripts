@@ -1,9 +1,9 @@
 using Base.Resources.Services;
 using Godot;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
-using Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
+using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
 
-namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Intro
+namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Intro
 {
   public class MarsIntroController : Node
     {
@@ -20,7 +20,7 @@ namespace Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Intro
             base._Ready();
             if (GameVariablesDatabase.Instance.BoolVariable["mars_debugging_on"].RuntimeValue)
             {
-                GD.Print("Test_App.BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Intro.MarsIntroController._Ready()");
+                GD.Print("BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Intro.MarsIntroController._Ready()");
             }
             Instance = this;
             // initialize the scene
