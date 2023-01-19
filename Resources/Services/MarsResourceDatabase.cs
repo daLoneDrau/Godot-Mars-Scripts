@@ -7,6 +7,7 @@ using Godot;
 using System;
 using System.Collections.Generic;
 using BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
+using Base.Resources.Variables;
 
 namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
 {
@@ -210,6 +211,14 @@ namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
                         else if (res is GenderTableResource)
                         {
                             GenderTable = (GenderTableResource)res;
+                        }
+                        else if (res is BoolVariable
+                                || res is IntVariable
+                                || res is FloatVariable
+                                || res is StringVariable
+                                || res is StringArrayVariable)
+                        {
+                            GameVariablesDatabase.Instance.AddResource(key, res, true);
                         }
                         else
                         {
