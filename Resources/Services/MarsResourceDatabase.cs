@@ -3,11 +3,11 @@ using Base.Exceptions;
 using Base.Pooled;
 using Base.Resources.Bus;
 using Base.Resources.Services;
+using Base.Resources.Variables;
 using Godot;
 using System;
 using System.Collections.Generic;
 using BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
-using Base.Resources.Variables;
 
 namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
 {
@@ -125,7 +125,7 @@ namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
                     arr = ArrayUtilities.Instance.ExtendArray(fileName, arr);
                     if (dir.CurrentIsDir())
                     {
-                        GD.Print("Found directory:", fileName);
+                        // GD.Print("Found directory:", fileName);
                         if (!fileName.Equals(".git", StringComparison.OrdinalIgnoreCase))
                         {
                             LoadDirectory(arr);
@@ -133,7 +133,7 @@ namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
                     }
                     else
                     {
-                        GD.Print("Found file:", fileName);
+                        // GD.Print("Found file:", fileName);
 
                         string key = fileName.Substr(0, fileName.Length - 5);
                         
