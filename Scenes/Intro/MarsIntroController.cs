@@ -28,6 +28,17 @@ namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Intro
             GetNode<Button>("./bottom/container/btn-start").Connect("pressed", this, "OnStart", null, (uint)ConnectFlags.ReferenceCounted);
             GetNode<Button>("./bottom/container/btn-instructions").Connect("pressed", this, "OnInstructions", null, (uint)ConnectFlags.ReferenceCounted);
             GetNode<Button>("./bottom/container/btn-back").Connect("pressed", this, "OnBack", null, (uint)ConnectFlags.ReferenceCounted);
+
+            // Load the custom images for the mouse cursor.
+            var arrow = ResourceLoader.Load("res://art/themes/commodore_64/widgets/cursor_arrow.png");
+            var hand = ResourceLoader.Load("res://art/themes/commodore_64/widgets/cursor_hand.png");
+
+            // Changes only the arrow shape of the cursor.
+            // This is similar to changing it in the project settings.
+            Input.SetCustomMouseCursor(arrow, Input.CursorShape.Arrow, new Vector2(11, 0));
+
+            // Changes a specific shape of the cursor (here, the I-beam shape).
+            Input.SetCustomMouseCursor(hand, Input.CursorShape.PointingHand);
         }
         /// <summary>
         /// Handler for the OnBack signal.
