@@ -1,11 +1,6 @@
 using Base.Resources.Services;
 using Godot;
-using BasicGames.GoldenFlutesGreatEscapes.Mars.CustomResources;
-using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus;
-using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Data;
 using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Bus.Map;
-using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.EnumeratedTypes;
-using BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services;
 
 namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Scenes.Init
 {

@@ -65,13 +65,13 @@ namespace BasicGames.GoldenFlutesGreatEscapes.Mars.Resources.Services
             switch (GameState.MarsGameStateEnum)
             {
                 case MarsGameStateEnum.MARS_GAME_START:
-                    nextSceneToDisplay = "res://scenes/directories/basic games/Golden Flutes and Great Escapes/Mars/intro/mars-intro.tscn";
+                    nextSceneToDisplay = "res://scenes/basic games/Golden Flutes and Great Escapes/Mars/intro/mars-intro.tscn";
                     break;
                 case MarsGameStateEnum.MARS_GAME_NEW_GAME:
-                    nextSceneToDisplay = "res://scenes/directories/basic games/Golden Flutes and Great Escapes/Mars/new_game/mars_new_game.tscn";
+                    nextSceneToDisplay = "res://scenes/basic games/Golden Flutes and Great Escapes/Mars/new_game/mars_new_game.tscn";
                     break;
                 case MarsGameStateEnum.MARS_GAME_INIT:
-                    nextSceneToDisplay = "res://scenes/directories/basic games/Golden Flutes and Great Escapes/Mars/init/mars-init.tscn";
+                    nextSceneToDisplay = "res://scenes/basic games/Golden Flutes and Great Escapes/Mars/init/mars-init.tscn";
                     break;
             }
             if (nextSceneToDisplay != null && nextSceneToDisplay.Length > 0)
